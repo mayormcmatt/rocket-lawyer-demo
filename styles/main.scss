@@ -1,0 +1,11 @@
+@import "vars_mixins";
+@import "typography";
+@import "colors";
+
+h1 {
+	font-size: 36px;
+	font-family: "Open Sans";
+	@include phone {
+		font-size: 24px;
+	}
+}

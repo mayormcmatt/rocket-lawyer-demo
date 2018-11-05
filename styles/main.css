@@ -1,0 +1,8 @@
+h1 {
+  font-size: 36px;
+  font-family: "Open Sans"; }
+  @media (min-width: 375px) and (max-width: 767px) {
+    h1 {
+      font-size: 24px; } }
+
+/*# sourceMappingURL=main.css.map */
