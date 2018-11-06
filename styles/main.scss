@@ -11,6 +11,7 @@ body {
 	padding: 0;
 	font-size: 16px;
 	background-color: white;
+	overflow: hidden;
 
 	@include phone {
 		background-color: #f1f1f1;
@@ -39,6 +40,10 @@ body {
 	}
 
 	div.dummy-upper {
+		width: 100%;
+		height: 20em;
+		box-shadow: 0 3px 3px #999;
+
 		@include phone {
 			width: 90vw;
 			height: 20em;
@@ -49,6 +54,7 @@ body {
 		@include tablet {
 			width: 95vw;
 			border-bottom: 2px solid #ccc;
+			box-shadow: none;
 		}
 
 		@include tablet {
@@ -57,6 +63,8 @@ body {
 	}
 
 	div.dummy-lower {
+		height: 20em;
+
 		@include phone {
 			width: 100vw;
 			height: 100%;

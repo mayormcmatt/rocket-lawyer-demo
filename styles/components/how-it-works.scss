@@ -1,4 +1,7 @@
 article.how-works {
+	width: $desktop-content-max-width;
+	margin: 2em 0;
+
 	@include phone {
 		height: 12em;
 		width: 90vw;
@@ -15,6 +18,7 @@ article.how-works {
 	ul.how-works-icons {
 		display: flex;
 		flex-direction: row;
+		justify-content: space-evenly;
 		list-style: none;
 		margin: 0;
 		padding: 0;
@@ -34,6 +38,8 @@ article.how-works {
 			align-items: center;
 
 			&:nth-child(odd) {
+				width: 350px;
+
 				@include phone {
 					width: 30vw;
 				}
@@ -43,6 +49,8 @@ article.how-works {
 				}
 
 				img {
+					width: 128px;
+
 					@include tablet {
 						width: 60%;
 					}
@@ -58,12 +66,29 @@ article.how-works {
 					display: none;
 				}
 
+				@include desktop {
+					display: none;
+				}
+
 				img {
 					@include phone {
 						margin-top: 1.4em;
 					}
 				}
 			}
+		}
+	}
+
+	&:before {
+		@include desktop {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			content: " ";
+			display: block;
+			border-bottom: 1px solid #ccc;
+			width: 1500px;
+			height: 330px;
 		}
 	}
 }
