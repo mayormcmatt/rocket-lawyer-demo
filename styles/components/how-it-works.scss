@@ -5,6 +5,13 @@ article.how-works {
 		margin: 1em 0;
 	}
 
+	@include tablet {
+		width: 90vw;
+		height: 35vh;
+		margin: 2em 0;
+		border-bottom: 2px solid #ccc;
+	}
+
 	ul.how-works-icons {
 		display: flex;
 		flex-direction: row;
@@ -16,19 +23,39 @@ article.how-works {
 			justify-content: space-around;
 		}
 
+		@include tablet {
+			justify-content: space-evenly;
+		}
+
 		li {
 			display: inherit;
 			flex-direction: column;
+			// justify-content: center;
+			align-items: center;
 
 			&:nth-child(odd) {
 				@include phone {
 					width: 30vw;
+				}
+
+				@include tablet {
+					width: 25vw;
+				}
+
+				img {
+					@include tablet {
+						width: 60%;
+					}
 				}
 			}
 
 			&:nth-child(even) {
 				@include phone {
 					width: 5vw;
+				}
+
+				@include tablet {
+					display: none;
 				}
 
 				img {
