@@ -1,8 +1,81 @@
-h1 {
-  font-size: 36px;
-  font-family: "Open Sans"; }
-  @media (min-width: 375px) and (max-width: 767px) {
-    h1 {
-      font-size: 24px; } }
+html, body {
+  font-family: "Open Sans", sans-serif; }
+
+.section-header {
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center; }
+
+.icon-title {
+  font-size: 17px;
+  color: #333;
+  font-weight: 300;
+  text-align: center; }
+
+.icon-copy {
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+  text-align: center; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  article.how-works {
+    height: 12em;
+    width: 90vw;
+    margin: 1em 0; } }
+article.how-works ul.how-works-icons {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  @media (min-width: 320px) and (max-width: 767px) {
+    article.how-works ul.how-works-icons {
+      justify-content: space-around; } }
+  article.how-works ul.how-works-icons li {
+    display: inherit;
+    flex-direction: column; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      article.how-works ul.how-works-icons li:nth-child(odd) {
+        width: 30vw; } }
+    @media (min-width: 320px) and (max-width: 767px) {
+      article.how-works ul.how-works-icons li:nth-child(even) {
+        width: 5vw; } }
+    @media (min-width: 320px) and (max-width: 767px) {
+      article.how-works ul.how-works-icons li:nth-child(even) img {
+        margin-top: 1.4em; } }
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #f1f1f1; }
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .main-content {
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+      padding: 0; } }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .main-content div.dummy-upper {
+      width: 90vw;
+      height: 10em;
+      background-color: white;
+      box-shadow: 0 4px 0px 0 #ccc; } }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .main-content div.dummy-lower {
+      width: 100vw;
+      height: 100%;
+      background-color: white; } }
 
 /*# sourceMappingURL=main.css.map */

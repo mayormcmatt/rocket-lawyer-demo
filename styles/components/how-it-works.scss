@@ -1,0 +1,42 @@
+article.how-works {
+	@include phone {
+		height: 12em;
+		width: 90vw;
+		margin: 1em 0;
+	}
+
+	ul.how-works-icons {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		@include phone {
+			justify-content: space-around;
+		}
+
+		li {
+			display: inherit;
+			flex-direction: column;
+
+			&:nth-child(odd) {
+				@include phone {
+					width: 30vw;
+				}
+			}
+
+			&:nth-child(even) {
+				@include phone {
+					width: 5vw;
+				}
+
+				img {
+					@include phone {
+						margin-top: 1.4em;
+					}
+				}
+			}
+		}
+	}
+}
