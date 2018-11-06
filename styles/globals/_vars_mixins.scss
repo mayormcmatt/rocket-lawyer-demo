@@ -14,6 +14,12 @@ $desktop-content-max-width: 1180px;
 		@content;
 	}
 }
+// This fixes one specific issue while approaching desktop width
+@mixin tablet-lg {
+	@media (min-width: #{$desktop-width}) and (max-width: #{$desktop-content-max-width}) {
+		@content;
+	}
+}
 
 @mixin desktop {
 	@media (min-width: #{$desktop-width}) {

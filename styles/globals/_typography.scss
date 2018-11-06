@@ -15,8 +15,8 @@ body {
 	text-align: center;
 
 	@include phone {
-		font-size: 5vw;
-		letter-spacing: 0.6vw
+		font-size: 3.4vw;
+		letter-spacing: 0.5vw
 	}
 
 	@include tablet {
@@ -31,13 +31,14 @@ body {
 	text-align: center;
 
 	@include phone {
-		font-size: 4vw;
+		font-size: 3.2vw;
 		font-weight: 400;
 	}
 
 	@include tablet {
 		font-size: 2.2vw;
 		font-weight: 700;
+		margin: 1vw 0;
 	}
 }
 
@@ -53,21 +54,20 @@ body {
 	}
 
 	@include tablet {
-		font-size: 2vw;
-		// font-weight: 300;
+		font-size: 1.8vw;
 		margin: 0;
 	}
 }
 
 .ipsum-copy {
-	width: $desktop-content-max-width;
+	width: 80%;
 	color: $dark-grey-font;
 	font-weight: 300;
 	text-align: center;
 
 	@include phone {
 		width: 90%;
-		font-size: 3.5vw;
+		font-size: 2.5vw;
 	}
 
 	@include tablet {

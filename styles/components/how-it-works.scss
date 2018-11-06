@@ -1,58 +1,68 @@
 article.how-works {
-	width: $desktop-content-max-width;
+	width: $desktop-width;
+	height: 20em;
 	margin: 2em 0;
+	position: relative;
 
 	@include phone {
-		height: 12em;
+		height: 50vw;
 		width: 90vw;
 		margin: 1em 0;
 	}
 
 	@include tablet {
-		width: 90vw;
-		height: 35vh;
+		width: 95vw;
+		height: 40vw;
 		margin: 2em 0;
 		border-bottom: 2px solid #ccc;
 	}
 
-	ul.how-works-icons {
+	ul.how-works__icons {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		list-style: none;
 		margin: 0;
 		padding: 0;
 
 		@include phone {
-			justify-content: space-around;
+			justify-content: center;
 		}
 
 		@include tablet {
+			justify-content: center;
+		}
+
+		@include tablet-lg {
 			justify-content: space-evenly;
 		}
 
 		li {
 			display: inherit;
 			flex-direction: column;
-			// justify-content: center;
 			align-items: center;
 
 			&:nth-child(odd) {
-				width: 350px;
+				width: 260px;
 
 				@include phone {
-					width: 30vw;
-				}
-
-				@include tablet {
 					width: 25vw;
 				}
 
+				@include tablet {
+					width: 24vw;
+					margin: 0 1vw;
+				}
+
 				img {
-					width: 128px;
+					width: 8em;
+
+					@include phone {
+						width: 65%;
+					}
 
 					@include tablet {
-						width: 60%;
+						width: 14vw;
 					}
 				}
 			}
@@ -72,8 +82,15 @@ article.how-works {
 
 				img {
 					@include phone {
-						margin-top: 1.4em;
+						margin-top: 5vw;
+						width: 4vw;
 					}
+				}
+			}
+
+			&:last-child {
+				.icon-copy {
+					width: 11em;
 				}
 			}
 		}
@@ -87,8 +104,8 @@ article.how-works {
 			content: " ";
 			display: block;
 			border-bottom: 1px solid #ccc;
-			width: 1500px;
-			height: 330px;
+			width: 1200px;
+			height: 22em;
 		}
 	}
 }

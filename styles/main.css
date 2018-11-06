@@ -10,8 +10,8 @@ body {
   text-align: center; }
   @media (min-width: 320px) and (max-width: 767px) {
     .section-header {
-      font-size: 5vw;
-      letter-spacing: 0.6vw; } }
+      font-size: 3.4vw;
+      letter-spacing: 0.5vw; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .section-header {
       font-size: 2.2vw; } }
@@ -23,12 +23,13 @@ body {
   text-align: center; }
   @media (min-width: 320px) and (max-width: 767px) {
     .icon-title {
-      font-size: 4vw;
+      font-size: 3.2vw;
       font-weight: 400; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .icon-title {
       font-size: 2.2vw;
-      font-weight: 700; } }
+      font-weight: 700;
+      margin: 1vw 0; } }
 
 .icon-copy {
   font-size: 14px;
@@ -41,79 +42,91 @@ body {
       display: none; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .icon-copy {
-      font-size: 2vw;
+      font-size: 1.8vw;
       margin: 0; } }
 
 .ipsum-copy {
-  width: 1180px;
+  width: 80%;
   color: #333;
   font-weight: 300;
   text-align: center; }
   @media (min-width: 320px) and (max-width: 767px) {
     .ipsum-copy {
       width: 90%;
-      font-size: 3.5vw; } }
+      font-size: 2.5vw; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .ipsum-copy {
       width: 90%;
       font-size: 2vw; } }
 
 article.how-works {
-  width: 1180px;
-  margin: 2em 0; }
+  width: 1024px;
+  height: 20em;
+  margin: 2em 0;
+  position: relative; }
   @media (min-width: 320px) and (max-width: 767px) {
     article.how-works {
-      height: 12em;
+      height: 50vw;
       width: 90vw;
       margin: 1em 0; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     article.how-works {
-      width: 90vw;
-      height: 35vh;
+      width: 95vw;
+      height: 40vw;
       margin: 2em 0;
       border-bottom: 2px solid #ccc; } }
-  article.how-works ul.how-works-icons {
+  article.how-works ul.how-works__icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     list-style: none;
     margin: 0;
     padding: 0; }
     @media (min-width: 320px) and (max-width: 767px) {
-      article.how-works ul.how-works-icons {
-        justify-content: space-around; } }
+      article.how-works ul.how-works__icons {
+        justify-content: center; } }
     @media (min-width: 768px) and (max-width: 1023px) {
-      article.how-works ul.how-works-icons {
+      article.how-works ul.how-works__icons {
+        justify-content: center; } }
+    @media (min-width: 1024px) and (max-width: 1180px) {
+      article.how-works ul.how-works__icons {
         justify-content: space-evenly; } }
-    article.how-works ul.how-works-icons li {
+    article.how-works ul.how-works__icons li {
       display: inherit;
       flex-direction: column;
       align-items: center; }
-      article.how-works ul.how-works-icons li:nth-child(odd) {
-        width: 350px; }
+      article.how-works ul.how-works__icons li:nth-child(odd) {
+        width: 260px; }
         @media (min-width: 320px) and (max-width: 767px) {
-          article.how-works ul.how-works-icons li:nth-child(odd) {
-            width: 30vw; } }
-        @media (min-width: 768px) and (max-width: 1023px) {
-          article.how-works ul.how-works-icons li:nth-child(odd) {
+          article.how-works ul.how-works__icons li:nth-child(odd) {
             width: 25vw; } }
-        article.how-works ul.how-works-icons li:nth-child(odd) img {
-          width: 128px; }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          article.how-works ul.how-works__icons li:nth-child(odd) {
+            width: 24vw;
+            margin: 0 1vw; } }
+        article.how-works ul.how-works__icons li:nth-child(odd) img {
+          width: 8em; }
+          @media (min-width: 320px) and (max-width: 767px) {
+            article.how-works ul.how-works__icons li:nth-child(odd) img {
+              width: 65%; } }
           @media (min-width: 768px) and (max-width: 1023px) {
-            article.how-works ul.how-works-icons li:nth-child(odd) img {
-              width: 60%; } }
+            article.how-works ul.how-works__icons li:nth-child(odd) img {
+              width: 14vw; } }
       @media (min-width: 320px) and (max-width: 767px) {
-        article.how-works ul.how-works-icons li:nth-child(even) {
+        article.how-works ul.how-works__icons li:nth-child(even) {
           width: 5vw; } }
       @media (min-width: 768px) and (max-width: 1023px) {
-        article.how-works ul.how-works-icons li:nth-child(even) {
+        article.how-works ul.how-works__icons li:nth-child(even) {
           display: none; } }
       @media (min-width: 1024px) {
-        article.how-works ul.how-works-icons li:nth-child(even) {
+        article.how-works ul.how-works__icons li:nth-child(even) {
           display: none; } }
       @media (min-width: 320px) and (max-width: 767px) {
-        article.how-works ul.how-works-icons li:nth-child(even) img {
-          margin-top: 1.4em; } }
+        article.how-works ul.how-works__icons li:nth-child(even) img {
+          margin-top: 5vw;
+          width: 4vw; } }
+      article.how-works ul.how-works__icons li:last-child .icon-copy {
+        width: 11em; }
   @media (min-width: 1024px) {
     article.how-works:before {
       position: absolute;
@@ -122,8 +135,8 @@ article.how-works {
       content: " ";
       display: block;
       border-bottom: 1px solid #ccc;
-      width: 1500px;
-      height: 330px; } }
+      width: 1200px;
+      height: 22em; } }
 
 html,
 body {
@@ -133,11 +146,15 @@ body {
   padding: 0;
   font-size: 16px;
   background-color: white;
-  overflow: hidden; }
+  overflow-x: hidden; }
   @media (min-width: 320px) and (max-width: 767px) {
     html,
     body {
       background-color: #f1f1f1; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    html,
+    body {
+      height: 1024px; } }
 
 .main-content {
   display: flex;
@@ -145,7 +162,7 @@ body {
   align-items: center; }
   @media (min-width: 320px) and (max-width: 767px) {
     .main-content {
-      height: 100vh;
+      height: 812px;
       width: 100vw;
       margin: 0;
       padding: 0; } }
